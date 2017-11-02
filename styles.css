@@ -1,0 +1,61 @@
+body { 
+    background: #eee;
+    margin: 0 auto;
+    font-family: 'Pontano Sans', sans-serif;
+    background: url("https://static.pexels.com/photos/279/black-and-white-branches-tree-high.jpg") no-repeat;
+	background-size: cover;
+}
+
+.navigation {
+	padding: 0 30px;
+}
+
+p, h1, h2 {
+	line-height: 1.5;
+	padding: 0 30px 0 30px;
+	color: #394349;
+}
+
+header, footer, nav {
+	background-color: white;
+	padding: 20px 0;
+	color: #394349;
+	width: 100%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
+.center-content {
+	background-color: white;
+	padding: 20px;
+	width: 80%;
+	margin: 100px auto 0 auto;
+}
+
+.center-text {
+	margin: 150px auto 0 auto;
+	background-color: grey;
+	color: white;
+	text-align: center;
+	padding: 30px;
+	font-size: 48px;
+	width: 350px;
+}
+
+ul {
+	border-bottom: 1px solid grey;
+}
+
+li {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+}
