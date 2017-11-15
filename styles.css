@@ -1,9 +1,17 @@
 body { 
-    background: #eee;
     margin: 0 auto;
     font-family: 'Pontano Sans', sans-serif;
-    background: url("https://static.pexels.com/photos/279/black-and-white-branches-tree-high.jpg") no-repeat;
+    letter-spacing: .2em;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("https://static.pexels.com/photos/279/black-and-white-branches-tree-high.jpg") no-repeat;
 	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .navigation {
@@ -16,21 +24,22 @@ body {
     font-size: 32px;
 }
 
-p, h1, h2 {
+p, h1, h2, h3 {
 	line-height: 1.5;
 	padding: 0 30px 0 30px;
-	color: #394349;
+	color: white
 }
 
 h1 {
 	display: inline-block;
-	margin-bottom: 0;
+	margin: 0;
+	font-size: larger;
 }
 
 header, footer, nav {
-	background-color: white;
+	background-color: #2D343A;
 	padding: 20px 0;
-	color: #394349;
+	color: white;
 	width: 100%;
 }
 
@@ -39,25 +48,55 @@ footer {
 	bottom: 0;
 }
 
+footer p {
+	font-size: small;
+}
+
 .center-content {
 	background-color: white;
 	padding: 20px;
 	width: 80%;
 	margin: 100px auto 0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center-content p {
+	color: #2D343A;
+	letter-spacing: 1px;
 }
 
 .center-text {
 	margin: 150px auto 0 auto;
-	background-color: grey;
+	background-color: rgba(45,52,58,.9);
 	color: white;
 	text-align: center;
 	padding: 30px;
-	font-size: 48px;
+	font-size: 40px;
 	width: 350px;
 }
 
+.tile {
+	background-color: white;
+	padding: 10px;
+	margin: 100px 20px 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tile img {
+	height: 250px;
+	width: 300px;
+}
+
+.tile p {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0 0 0;
+	color: #394349;
+	font-weight: bold;
+}
+
 ul {
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid white;
 }
 
 li {
@@ -68,5 +107,12 @@ li {
 
 a {
 	text-decoration: none;
-	color: grey;
+	color: white;
+}
+
+a:hover, a:link {
+	color: #3FFFFE;
+}
+a:visited {
+	color: silver;
 }
