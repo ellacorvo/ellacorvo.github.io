@@ -1,17 +1,23 @@
+html {
+	height: 100%;
+}
+
 body { 
     margin: 0 auto;
     font-family: 'Pontano Sans', sans-serif;
     letter-spacing: .2em;
     background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("https://static.pexels.com/photos/279/black-and-white-branches-tree-high.jpg") no-repeat;
 	background-size: cover;
+	height: 100%;
 }
 
 .container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 90%;
+	justify-content: center;
 	margin: 0 auto;
+	padding-top: 10px;
 }
 
 .navigation {
@@ -22,6 +28,7 @@ body {
 	padding: 0 20px;
     margin-left: 70px;
     font-size: 32px;
+    color: orange;
 }
 
 p, h1, h2, h3 {
@@ -34,11 +41,12 @@ h1 {
 	display: inline-block;
 	margin: 0;
 	font-size: larger;
+	color: orange;
 }
 
 header, footer, nav {
 	background-color: #2D343A;
-	padding: 20px 0;
+	padding: 5px 0;
 	color: white;
 	width: 100%;
 }
@@ -56,7 +64,7 @@ footer p {
 	background-color: white;
 	padding: 20px;
 	width: 80%;
-	margin: 100px auto 0 auto;
+	margin: 75px auto 0 auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -66,25 +74,24 @@ footer p {
 }
 
 .center-text {
-	margin: 150px auto 0 auto;
+	margin: 0 auto;
+	margin-top: 6%;
 	background-color: rgba(45,52,58,.9);
 	color: white;
-	text-align: center;
 	padding: 30px;
-	font-size: 40px;
-	width: 350px;
+	width: 60%;
 }
 
 .tile {
 	background-color: white;
 	padding: 10px;
-	margin: 100px 20px 10px 20px;
+	margin: 10px 20px 10px 20px;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .tile img {
-	height: 250px;
-	width: 300px;
+	height: 200px;
+	width: auto;
 }
 
 .tile p {
@@ -93,6 +100,10 @@ footer p {
 	padding: 10px 0 0 0;
 	color: #394349;
 	font-weight: bold;
+}
+
+.tile p:hover {
+	color: orange;
 }
 
 ul {
@@ -107,12 +118,26 @@ li {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: orange;
 }
 
 a:hover, a:link {
-	color: #3FFFFE;
+	color: white;
 }
-a:visited {
-	color: silver;
+
+label {
+	display: inline-block;
+}
+input {
+	width: 20%;
+	min-width: 200px;
+	margin: 10px;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+textarea {
+	display: inline-block;
+	width: 100%;
 }
